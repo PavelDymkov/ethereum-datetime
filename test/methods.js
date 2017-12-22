@@ -48,4 +48,13 @@ describe(`DateTime`, () => {
             assert.equal(value, timestamp);
         });
     });
+
+
+    describe(`.toString()`, () => {
+        it(`should check .toString() returns correct value`, () => {
+            let timestamp = new Date(2007, 8, 3, 12, 35, 45) / 1000;
+
+            assert.equal(new DateTime(timestamp).toString(), "03.09.2007 12:35:45");
+        });
+    });
 });

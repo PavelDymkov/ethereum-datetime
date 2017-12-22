@@ -82,7 +82,7 @@ class DateTime {
 
     getDate() {
         let date = new Date(this.timestamp * 1000);
-        let dateArray = [date.getDate(), date.getMonth(), date.getFullYear()];
+        let dateArray = [date.getDate(), date.getMonth() + 1, date.getFullYear()];
 
         dateArray.toString = lib.dateArrayToString;
 
@@ -148,7 +148,7 @@ class DateTime {
     }
 
     toString() {
-        return `${this.getTime().toString()} ${this.getDate().toString()}`
+        return `${this.getDate().toString()} ${this.getTime().toString()}`;
     }
 }
 
