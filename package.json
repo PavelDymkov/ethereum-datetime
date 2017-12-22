@@ -1,0 +1,31 @@
+{
+  "name": "ethereum-datetime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf build && babel source --out-dir build",
+    "prepublish": "npm run build",
+    "start": "exit 1",
+    "test": "npm run build && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavelDymkov/ethereum-datetime.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavelDymkov/ethereum-datetime/issues"
+  },
+  "homepage": "https://github.com/PavelDymkov/ethereum-datetime#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "rimraf": "^2.6.2"
+  }
+}
